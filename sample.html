@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
+    <title>QR Code Generator for JavaScript</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+        }
+
+        #text {
+            display: block;
+            width: 400px;
+            height: 30px;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            height: 30px;
+            background-color: coral;
+            color: #fff;
+            border: none;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<input id="text" value="web端基于纯js实现的二维码生成模块">
+<button onclick="makeCode()">Make</button>
+<script type="text/javascript" src="./dist/qrcode.js"></script>
+<script type="text/javascript" src="./sample.js"></script>
+</body>
+</html>
